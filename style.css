@@ -4,7 +4,7 @@
     --cor-de-fundo: #200552;
     --verde: #00fd00;
     --branco: #FFFFFF;
-    --botao-ativo: #0ba5c0;
+    --botao-ativo: #000000;
     --botao-inativo: rgba(212, 8, 110, 0.5);
     --texto-fundo: rgba(20, 0, 243, 0.3);
 }
@@ -60,9 +60,33 @@ body {
     display: block;
 }
 
-.ativo{
+.botao.ativo{
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--verde);
+}
+
+.abas-textos{
+    background-color: var(--botao-ativo);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+}
+
+.aba-conteudo.ativo {
+    display: block;
+}
+
+.aba-conteudo{
+    display: none;
+}
+.aba-conteudo-titulo-principal{
+    font-size: 28px;
+    text-align:center ;
+}
+
+.aba-conteudo-titulo-secundario{
+    text-align: center;
+    color: var(--branco);
+    text-transform: uppercase;
 }
 
 @media screen and (min-width:768px){
